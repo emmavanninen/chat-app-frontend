@@ -65,7 +65,7 @@ class Chat extends Component {
       if (response.data) {
         this.setState({
           users: response.data.liveMembers,
-          messages: response.data.messages.slice(-10),
+          messages: response.data.messages,
           roomId: response.data._id,
           channel: response.data
         })
